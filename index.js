@@ -1,11 +1,22 @@
 
-const mySiema = new Siema({
-    selector: ".feature-carousel",
-    loop: true
-});
+document.addEventListener("DOMContentLoaded", () => {
+    'use strict';
+    siemaLoader();
+})
 
-const prev = document.querySelector('.left-arrow');
-const next = document.querySelector('.right-arrow');
+const siemaLoader = () => {
 
-prev.addEventListener('click', () => mySiema.prev());
-next.addEventListener('click', () => mySiema.next());
+    const mySiema = new Siema({
+        selector: ".feature-carousel",
+        loop: true
+    });
+ 
+    // const prev = document.querySelector('.left-arrow');
+    // const next = document.querySelector('.right-arrow');
+    const arrows = document.querySelector(".arrow-buttons").childNodes;
+    
+    arrows[1].addEventListener('click', () => mySiema.prev());
+    arrows[3].addEventListener('click', () => mySiema.next());
+    
+}
+
