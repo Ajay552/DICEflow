@@ -161,6 +161,301 @@ main .desktop-img {
   color: var(--secondary-color);
 }
 
+#features ul {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px 0;
+}
+
+#features ul li {
+  border: 1px solid rgba(70, 71, 73, 0.4);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  list-style: none;
+  padding: 25px;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+#features ul li figure {
+  display: block;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+#features ul li figure img {
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#features ul li figure figcaption h6 {
+  font-size: 18px;
+  color: #5b5b5d;
+  font-weight: 500;
+}
+
+#features ul li figure figcaption p {
+  font-size: 12px;
+  margin: 20px 0;
+  color: #5b5b5d;
+}
+
+#features .arrow-buttons {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+}
+
+#features .arrow-buttons .left-arrow {
+  position: absolute;
+  width: 30px;
+  left: 6px;
+}
+
+#features .arrow-buttons .right-arrow {
+  position: absolute;
+  width: 30px;
+  right: 6px;
+}
+
+#register {
+  background-image: url(https://diceflow.in/home-static/images/background.svg);
+  background-repeat: no-repeat;
+  background-position: 55vw 2vw;
+  background-size: 65vw;
+}
+
+#register h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-size: 500;
+  color: var(--secondary-color);
+}
+
+#register .heading-descreption {
+  display: block;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #5b5b5d;
+  margin: 30px auto;
+  font-weight: 500;
+}
+
+#register .heading-descreption::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #00ae8d;
+  margin: 50px auto;
+}
+
+#register ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto 0;
+  width: 100%;
+  padding-left: 0;
+}
+
+#register ul .plan {
+  border: 1px solid rgba(70, 71, 73, 0.2);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(70, 71, 73, 0.2);
+          box-shadow: 0px 0px 8px rgba(70, 71, 73, 0.2);
+  position: relative;
+  background-color: #ffff;
+  padding: 3.12rem 0.6rem;
+  margin: 0 auto;
+  margin-left: 10px;
+  width: 95%;
+  list-style: none;
+}
+
+#register ul .plan h4 {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+#register ul .plan h4::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #00ae8d;
+  margin: 1.25rem auto;
+}
+
+#register ul .plan span {
+  display: block;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.8rem;
+}
+
+#register ul .plan .cost {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+#register ul .plan .users {
+  margin: 1.25rem 0;
+  font-size: 0.7rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+#register ul .plan button {
+  padding: 0.75rem 2.8rem;
+  border: 1px solid #00ae8d;
+  background-color: #ffff;
+  color: #00ae8d;
+  border-radius: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 2.5rem auto 0;
+}
+
+#register ul .plan-detail {
+  list-style: none;
+  width: 70%;
+  margin: 0 auto;
+  padding: 3.75rem 1.25rem;
+  border: 1px solid rgba(70, 71, 73, 0.2);
+  margin-bottom: 2rem;
+}
+
+#register ul .plan-detail p {
+  color: #292929;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 0.85rem;
+}
+
+footer {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background-color: #f5f6fa;
+  height: auto;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer div .about {
+  width: 90%;
+}
+
+footer div .about h4 {
+  font-size: 1.1rem;
+  color: #5b5b5d;
+}
+
+footer div .about article p {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin: 1.25rem 0;
+  color: var(--primary-color);
+}
+
+footer div nav ul {
+  padding: 0;
+}
+
+footer div nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+footer div nav ul li h5 {
+  font-size: 1.1rem;
+  color: #5b5b5d;
+  margin-bottom: 1rem;
+}
+
+footer div nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  counter-reset: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+footer div .subscribe {
+  width: 90%;
+}
+
+footer div .subscribe h4 {
+  font-size: 1.1rem;
+  color: #5b5b5d;
+}
+
+footer div .subscribe article p {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin: 1.25rem 0;
+  color: var(--primary-color);
+}
+
+footer div .subscribe input {
+  padding: 0.8rem 0.75rem;
+  border: 1px solid #5b5b5d;
+  border-radius: 1.25rem;
+  color: #5b5b5d;
+}
+
+footer div .subscribe button {
+  padding: 0.8rem 0.75rem;
+  background-color: var(--secondary-color);
+  color: #ffff;
+  border-radius: 0.75rem;
+  border: none;
+  margin-left: -30px;
+}
+
 @media screen and (min-width: 1024px) {
   header {
     display: -webkit-box;

@@ -3,9 +3,10 @@
 :root {
     --primary-color: #464749;
     --secondary-color: #803f97;
+    --button-color: #00ae8d;
 }
 
-$primary-font-weight: 500;
+$font-weight: 500;
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -39,7 +40,7 @@ header {
         div {
             color: #1f5b7b;
             font-size: 10px;
-            font-weight: 500;
+            font-weight: $font-weight;
             margin-bottom: -5px;
         }
         .sponsor {
@@ -127,7 +128,7 @@ main {
             padding: 14px 25px;
             border-radius: 20px;
             border: none;
-            background-color: #00ae8d;
+            background-color: var(--button-color);
             font-size: 14px;
             cursor: pointer;
             color: #ffff;
@@ -152,227 +153,522 @@ main {
 
     h3 {
         font-size: 1.5rem;
-        font-weight: 500;
+        font-weight: $font-weight;
         text-align: center;
         color: var(--secondary-color);
         
     }
-}
 
+    ul {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px 0;
 
-@media screen and (min-width: 1024px) {
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-items: center;
-        width: 90%; 
-        height: 115px;
-        margin: 0 auto;
-    
-        .logo {
-            margin-top: 45px;
-            height: 60px;
-        }
-        .sponsor {
-            // margin-top: 45px;
-            height: 60px;
-        }
-    
-        nav {
-    
-            // align-self: center;
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;     
-            // margin: 0 10px;   
+        li {
+            border: 1px solid rgba(70, 71, 73, 0.4);
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 10px;
+            list-style: none;
+            padding: 25px;
+            height: 40vh;
             display: flex;
-            a {
-    
-                // text-decoration: none;
-                color: var(--primary-color);
-                font-weight: 500;
-                font-size: 13px;
-                padding: 5px;
-                margin: 0 5px;
-    
-                
-                display: flex;
-                align-items: center;
-                justify-content: center;
-    
+            flex-direction: column;
+            background-color: white;
+
+            figure {
+
+                display: block;
+                flex-shrink: 1;
+                // flex-grow: 1;
+                height: 150px;
+                margin-bottom: 20px;
+
                 img {
                     display: block;
-                    width: 16px;
-                    height: 16px;
-                    // object-fit: contain;
-                    // margin-top: 5px;
-                    margin-right: 5px;
+                    height: 100%;
+                    width: auto;
+                    margin: 0 auto;
+                    object-fit: cover;
+                }
+
+                figcaption {
+                    h6 {
+                        font-size: 18px;
+                        color: #5b5b5d;
+                        font-weight: $font-weight;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        margin: 20px 0;
+                        color: #5b5b5d;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .arrow-buttons {
+        position: absolute;
+        width: 100%;
+        top: 40%;
+
+        .left-arrow {
+            position: absolute;
+            width: 30px;
+            left: 6px;
+        }
+        
+        .right-arrow {
+            position: absolute;
+            width: 30px;
+            right: 6px;
+        }
+    }
+}
+
+#register {
+    background-image: url(https://diceflow.in/home-static/images/background.svg);
+    background-repeat: no-repeat;
+    background-position: 55vw 2vw;
+    background-size: 65vw;
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        font-size: $font-weight;
+        color: var(--secondary-color);
+    }
+    .heading-descreption {
+        display: block;
+        font-size: 0.75rem;
+        text-align: center;
+        color: #5b5b5d;
+        margin: 30px auto;
+        font-weight: $font-weight;
+        // width: 80%;
+    } 
+
+    .heading-descreption::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--button-color);
+            margin: 50px auto;
+    }
+
+    ul {
+
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        margin: 0 auto 0;
+        width: 100%;
+        // list-style: none;
+        padding-left: 0;
+
+        .plan {
+            border: 1px solid rgba(70, 71, 73, 0.2);
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgba(70, 71, 73, 0.2);
+            position: relative;
+            background-color: #ffff;
+            padding: 3.12rem 0.6rem;
+            margin: 0 auto;
+            margin-left: 10px;
+            width: 95%;
+            list-style: none;
+
+            h4 {
+                text-align: center;
+                color: var(--secondary-color);
+                font-size: 1.25rem;
+                font-weight: $font-weight;
+
+            }
+            h4::after {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 3px;
+                background-color: var(--button-color);
+                margin: 1.25rem auto;
+            }
+
+            
+            span {
+                display: block;
+                text-align: center;
+                font-size: 1.25rem;
+                color: var(--secondary-color);
+                margin-bottom: 1.8rem;
+            }
+            .cost {
+                font-weight: 600;
+                font-size: 1.8rem;    
+            }
+            .users {
+                margin: 1.25rem 0;
+                font-size: 0.7rem;
+                color: var(--primary-color);
+                text-align: center;
+            }
+
+            button {
+                padding: 0.75rem 2.8rem;
+                border: 1px solid var(--button-color);
+                background-color: #ffff;
+                color: var(--button-color);
+                border-radius: 1.25rem;
+                font-size: 0.8rem;
+                font-weight: 600;
+                cursor: pointer;
+                display: block;
+                margin: 2.5rem auto 0;
+            }
+        }
+
+        .plan-detail {
+            list-style: none;
+            width: 70%;
+            margin: 0 auto;
+            padding: 3.75rem 1.25rem;
+            border: 1px solid rgba(70, 71, 73, 0.2);
+            margin-bottom: 2rem;
+
+            p {
+                color: #292929;
+                text-align: center;
+                line-height: 1.5;
+                font-size: 0.85rem;
+            }
+        }
+        
+    }
+}
+
+footer {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: #f5f6fa;
+    height: auto;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+
+        .about {
+            width: 90%;
+            // margin-bottom: 1.25rem;
+
+            h4 {
+                font-size: 1.1rem;
+                color: #5b5b5d;
+            }
+
+            article {
+                p {
+                    font-size: 0.75rem;
+                    line-height: 1.25rem;
+                    margin: 1.25rem 0;
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        nav {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            ul {
+                padding: 0;
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: end;
+                    list-style: none;
+                    // margin: 1.25rem 0;
+                    // margin: 0.6rem 0;
+                    
+                    h5 {
+                        font-size: 1.1rem;
+                        color: #5b5b5d;
+                        margin-bottom: 1rem;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: var(--primary-color);
+                        font-size: 0.8rem;
+                        counter-reset: var(--primary-color);
+                        font-weight: $font-weight;
+                        margin-bottom: 8px;
+                    }
                     
                 }
             }
         }
-    
-        a {
-            text-decoration: none;
-    
-            div {
-                color: #1f5b7b;
-                font-size: 10px;
-                font-weight: 500;
-                // margin-bottom: -45px;
-                margin-top: 50px;
-            }
-        }
-    }
 
-    .mobile {
-        display: none;
-    }
-    
-    main {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: relative;
-        background-image: url("https://diceflow.in/home-static/images/background.svg");
-        background-repeat: no-repeat;
-        background-size: 85vw 50vw;
-        background-position-x: 35vw;
-        min-height: calc(100vh - 115px); // subtracting 115px because header height is 115px
-        padding-bottom: 120px;
-    
-        section {
-            position: relative;
-            flex-basis: 30%;
-    
-            .stamp {
-                position: absolute;
-                top: 0;
-                right: -40px;
-                width: 120px;
-                height: 120px;
-            }
-    
-            h1 {
-                color: var(--secondary-color);
-                font-weight: 400;
-                font-size: 36px;
-                margin-bottom: 40px;
-                width: 80%;
-            }
-    
-            p {
-                color: var(--primary-color);
-                line-height: 2;
-                font-size: 13px;
-                font-weight: $primary-font-weight;
-                margin-bottom: 15px;
-            }
-    
-            button {
-                border-radius: 20px;
-                border: none;
-                padding: 14px 25px;
-                margin: 40px 0;
-                color: white;
-                background-color: #00ae8d;
-                font-size: 14px;
-                cursor: pointer;
-            }
+        .subscribe {
+            width: 90%;
             
-        }
-    
-        figure {
-            flex-basis: 20%;
-            display: block;
-            
-            img {
-                width: 250px;
-                height: auto;
-                margin: 0 auto;
+            h4 {
+                font-size: 1.1rem;
+                color: #5b5b5d;
             }
-        }
-    }
-    
-    #features {
-    
-        margin-top: -100px;
-        padding-bottom: 200px;
-        background-image: url("https://diceflow.in/home-static/images/background-2.svg");
-        background-repeat: no-repeat;
-        background-image: -10vw -5vw;
-        background-size: 55vw 55vw;
-        position: relative;
-    
-        h3 {
-            font-size: 1.5rem;
-            font-weight: 500;
-            text-align: center;
-            color: var(--secondary-color);
-        }
-    
-        ul {
-            display: flex;
-            list-style: none;
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px 0;
-            // overflow: hidden;
-            
-            li {
-    
-                border: 1px solid rgba(70, 71, 73, 0.4);
-                width: 80%;
-                margin: 0 auto;
-                border-radius: 10px;
-                list-style: none;
-                padding: 25px;
-                height: 40vh;
-                display: flex;
-                // flex-direction: column;
-                background-color: white;
-                box-shadow: none;
-                transition: box-shadow 500ms ease;
-    
-                figure {
-    
-                    img {
-                        // width: 500px;
-                        // height: 500px;
-                        display: block;
-                        height: 100%;
-                        width: auto;
-                        margin: 0 auto;
-                        object-fit: cover;
-                    }
-    
-                    figcaption {
-                        // align-self: flex-end;
-                    } 
+
+            article {
+                p {
+                    font-size: 0.75rem;
+                    line-height: 1.25rem;
+                    margin: 1.25rem 0;
+                    color: var(--primary-color);
                 }
             }
-        }
-    
-        .arrow-buttons {
-            position: absolute;
-            width: 100%;
-            top: 55%;
-    
-            .left-arrow {
-                position: absolute;
-                left: 60px;
-                width: 35px;
+
+            input {
+                padding: 0.8rem 0.75rem;
+                border: 1px solid #5b5b5d;
+                border-radius: 1.25rem;
+                color: #5b5b5d;
+                // font-weight: $font-weight;
+                // background-color: transparent;
             }
             
-            .right-arrow {
-                position: absolute;
-                right: 60px;
-                width: 35px;
+            button {
+                padding: 0.8rem 0.75rem;
+                background-color: var(--secondary-color);
+                color: #ffff;
+                border-radius: 0.75rem;
+                border: none;
+                margin-left: -30px;
+
             }
         }
+
     }
+}
+
+
+
+// @media screen and (min-width: 1024px) {
+
+//     header {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         align-items: center;
+//         width: 90%; 
+//         height: 115px;
+//         margin: 0 auto;
+    
+//         .logo {
+//             margin-top: 45px;
+//             height: 60px;
+//         }
+//         .sponsor {
+//             // margin-top: 45px;
+//             height: 60px;
+//         }
+    
+//         nav {
+    
+//             // align-self: center;
+//             // display: flex;
+//             // align-items: center;
+//             // justify-content: center;     
+//             // margin: 0 10px;   
+//             display: flex;
+//             a {
+    
+//                 // text-decoration: none;
+//                 color: var(--primary-color);
+//                 font-weight: $font-weight;
+//                 font-size: 13px;
+//                 padding: 5px;
+//                 margin: 0 5px;
+    
+                
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+    
+//                 img {
+//                     display: block;
+//                     width: 16px;
+//                     height: 16px;
+//                     // object-fit: contain;
+//                     // margin-top: 5px;
+//                     margin-right: 5px;
+                    
+//                 }
+//             }
+//         }
+    
+//         a {
+//             text-decoration: none;
+    
+//             div {
+//                 color: #1f5b7b;
+//                 font-size: 10px;
+//                 font-weight: $font-weight;
+//                 // margin-bottom: -45px;
+//                 margin-top: 50px;
+//             }
+//         }
+//     }
+
+//     .mobile {
+//         display: none;
+//     }
+    
+//     main {
+//         display: flex;
+//         justify-content: space-around;
+//         align-items: center;
+//         position: relative;
+//         background-image: url("https://diceflow.in/home-static/images/background.svg");
+//         background-repeat: no-repeat;
+//         background-size: 85vw 50vw;
+//         background-position-x: 35vw;
+//         min-height: calc(100vh - 115px); // subtracting 115px because header height is 115px
+//         padding-bottom: 120px;
+    
+//         section {
+//             position: relative;
+//             flex-basis: 30%;
+    
+//             .stamp {
+//                 position: absolute;
+//                 top: 0;
+//                 right: -40px;
+//                 width: 120px;
+//                 height: 120px;
+//             }
+    
+//             h1 {
+//                 color: var(--secondary-color);
+//                 font-weight: 400;
+//                 font-size: 36px;
+//                 margin-bottom: 40px;
+//                 width: 80%;
+//             }
+    
+//             p {
+//                 color: var(--primary-color);
+//                 line-height: 2;
+//                 font-size: 13px;
+//                 font-weight: $primary-font-weight;
+//                 margin-bottom: 15px;
+//             }
+    
+//             button {
+//                 border-radius: 20px;
+//                 border: none;
+//                 padding: 14px 25px;
+//                 margin: 40px 0;
+//                 color: white;
+//                 background-color: var(--button-color);
+//                 font-size: 14px;
+//                 cursor: pointer;
+//             }
+            
+//         }
+    
+//         figure {
+//             flex-basis: 20%;
+//             display: block;
+            
+//             img {
+//                 width: 250px;
+//                 height: auto;
+//                 margin: 0 auto;
+//             }
+//         }
+//     }
+    
+//     #features {
+    
+//         margin-top: -100px;
+//         padding-bottom: 200px;
+//         background-image: url("https://diceflow.in/home-static/images/background-2.svg");
+//         background-repeat: no-repeat;
+//         background-image: -10vw -5vw;
+//         background-size: 55vw 55vw;
+//         position: relative;
+    
+//         h3 {
+//             font-size: 1.5rem;
+//             font-weight: $font-weight;
+//             text-align: center;
+//             color: var(--secondary-color);
+//         }
+    
+//         ul {
+//             display: flex;
+//             list-style: none;
+//             width: 80%;
+//             margin: 20px auto;
+//             padding: 20px 0;
+//             // overflow: hidden;
+            
+//             li {
+    
+//                 border: 1px solid rgba(70, 71, 73, 0.4);
+//                 width: 80%;
+//                 margin: 0 auto;
+//                 border-radius: 10px;
+//                 list-style: none;
+//                 padding: 25px;
+//                 height: 40vh;
+//                 display: flex;
+//                 // flex-direction: column;
+//                 background-color: white;
+//                 box-shadow: none;
+//                 transition: box-shadow $font-weightms ease;
+    
+//                 figure {
+    
+//                     img {
+//                         // width: $font-weightpx;
+//                         // height: $font-weightpx;
+//                         display: block;
+//                         height: 100%;
+//                         width: auto;
+//                         margin: 0 auto;
+//                         object-fit: cover;
+//                     }
+    
+//                     figcaption {
+//                         // align-self: flex-end;
+//                     } 
+//                 }
+//             }
+//         }
+    
+//         .arrow-buttons {
+//             position: absolute;
+//             width: 100%;
+//             top: 55%;
+    
+//             .left-arrow {
+//                 position: absolute;
+//                 left: 60px;
+//                 width: 35px;
+//             }
+            
+//             .right-arrow {
+//                 position: absolute;
+//                 right: 60px;
+//                 width: 35px;
+//             }
+//         }
+//     }
     
 
-}
+// }
