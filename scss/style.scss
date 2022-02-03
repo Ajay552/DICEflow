@@ -122,20 +122,13 @@ header {
     background-size: 100% 145vw;
     background-position-x: 10vw;
     background-position-y: -20vw;
-    // margin-top: 4rem;
     padding-bottom: 12rem;
 
     @media screen and (min-width: 1023px) {
         display: flex;
-        // position: relative;
-        // background-image: url(https://diceflow.in/home-static/images/background.svg);
-        // background-repeat: no-repeat;
         background-size: 85vw 50vw;
         background-position-x: 35vw;
         background-position-y: 0;
-        // min-height: calc(100vh - 115px);
-        // padding-bottom: 120px;
-        // display: block;
         align-items: center;
         justify-content: space-around;
     }
@@ -149,20 +142,16 @@ header {
         @media screen and (min-width: 1023px) {
             flex-basis: 30%;
             position: relative;
-            // width: 100%;
             margin: 0;
-            // width: 0;
         }
 
         .stamp {
             position: absolute;
             top: -1rem;
-            // bottom: 20px;
             right: -3.8rem;
             width: 12rem;
             height: 12rem;
             display: block;
-            // margin: 0;
             @media screen and (min-width: 1023px) {
                 position: absolute;
                 top: 2rem;
@@ -251,7 +240,6 @@ header {
     padding-bottom: 10rem;
     background-position: -25vw -5vw;
     background-size: 120vw 150vw;
-    // margin-bottom: 10rem;
     @media screen and (min-width: 1023px) {
         background-position: -10vw -5vw;
         background-size: 55vw 55vw;
@@ -298,20 +286,6 @@ header {
                     object-fit: cover;
                 }
             }
-
-            // div {
-            //     h6 {
-            //         font-size: 1.8rem;
-            //         color: var(--dark-shadows);
-            //         font-weight: $font-weight;
-            //     }
-    
-            //     p {
-            //         font-size: 1.2rem;
-            //         margin: 2rem 0;
-            //         color: var(--dark-shadows);
-            //     }
-            // }
 
             h6 {
                 font-size: 1.8rem;
@@ -367,7 +341,6 @@ header {
         color: var(--dark-shadows);
         margin: 3rem auto;
         font-weight: $font-weight;
-        // width: 80%;
 
         @media screen and (min-width: 1023px) {
             width: 30%;
@@ -384,35 +357,21 @@ header {
         
     } 
 
-    // .heading-descreption::after {
-    //         content: "";
-    //         display: block;
-    //         width: 8rem;
-    //         height: 0.3rem;
-    //         background-color: var(--button-color);
-    //         margin: 5rem auto;
-    // }
-
     ul {
 
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 0 auto 0;
-        // width: 100%;  
+        margin: 0 auto 0; 
         width: 95%;
-        // list-style: none;
         padding-left: 0;
 
         @media screen and (min-width: 1023px) {
             flex-direction: row;
             justify-content: center;
-            // align-items: center;
             width: 90%;
             margin: 0 auto;
-            // margin: 0;
-            // margin-right: auto;
         }
 
         li:nth-child(1) {
@@ -451,16 +410,6 @@ header {
                 }
 
             }
-
-            // h4::after {
-            //     content: "";
-            //     display: block;
-            //     width: 6rem;
-            //     height: 0.3rem;
-            //     background-color: var(--button-color);
-            //     margin: 2rem auto;
-            // }
-
             
             span {
                 display: block;
@@ -599,9 +548,6 @@ footer {
         }
 
         nav {
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: space-between;
             @media screen and (min-width: 1023px) {
                 width: 30%;
             }
@@ -612,16 +558,13 @@ footer {
                 @media screen and (min-width: 1023px) {
                     display: flex;
                     justify-content: space-between;
-                    // padding-bottom: 5rem;
                 }
 
                 li {
                     display: flex;
                     flex-direction: column;
-                    // justify-content: end;
                     list-style: none;
-                    // margin: 1.25rem 0;
-                    // margin: 0.6rem 0;
+
                     
                     h5 {
                         font-size: 1.8rem;
@@ -675,8 +618,6 @@ footer {
                 border: 1px solid var(--dark-shadows);
                 border-radius: 2rem;
                 color: var(--dark-shadows);
-                // font-weight: $font-weight;
-                // background-color: transparent;
             }
             
             button {
