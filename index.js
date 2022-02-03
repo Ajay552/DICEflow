@@ -4,15 +4,23 @@ document.addEventListener("DOMContentLoaded", () => {
     siemaLoader();
 })
 
+
+
 const siemaLoader = () => {
+
+    let perPage = 1;
+    if(screen.width >= 1023) {
+        perPage = 3;
+    }
+
+    // console.log(perPage);
 
     const mySiema = new Siema({
         selector: ".feature-carousel",
-        loop: true
+        loop: true,
+        perPage: perPage,
     });
  
-    // const prev = document.querySelector('.left-arrow');
-    // const next = document.querySelector('.right-arrow');
     const arrows = document.querySelector(".arrow-buttons").childNodes;
     
     arrows[1].addEventListener('click', () => mySiema.prev());
