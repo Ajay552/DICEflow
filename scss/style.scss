@@ -82,6 +82,12 @@ header {
             font-size: 1rem;
             font-weight: $font-weight;
             // margin-bottom: -0.5rem;
+
+            @media screen and (min-width: 1023px) {
+                // margin-top: rem;
+                // font-weight: 600;
+                margin-bottom: -0.5rem;
+            }
         }
         .sponsor {
             display: block;
@@ -136,10 +142,11 @@ header {
         display: flex;
         background-size: 85vw 50vw;
         background-position-x: 35vw;
-        background-position-y: 0;
+        background-position-y: 1vw;
         align-items: center;
         justify-content: space-around;
-        padding-top: 2rem;
+        padding-top: 1rem;
+        margin: 0rem;   
     }
     
     .upfold-content {
@@ -151,7 +158,12 @@ header {
         @media screen and (min-width: 1023px) {
             flex-basis: 30%;
             position: relative;
-            margin: 0;
+            margin-top: 5rem;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            
+            
         }
 
         .stamp {
@@ -228,6 +240,10 @@ header {
         @media screen and (min-width: 1023px) {
             display: block;
             flex-basis: 30%;
+            margin-top: 5rem;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
 
             figure {
                 img {
@@ -275,6 +291,10 @@ header {
         margin: 2rem auto;
         padding: 2rem 0;
 
+        @media screen and (min-width: 1023px) {
+            // width: 70%;
+        }
+
         li {
             border: 0.1rem solid lighten($color: #464749, $amount: 50);
             width: 97.4%;
@@ -288,6 +308,10 @@ header {
             background-color: white;
             box-shadow: 0px 0px 3px rgba(70, 71, 73, 0.4);
             transition: box-shadow 500ms ease;
+
+            @media screen and (min-width: 1023px) {
+                width: 100%;
+            }
 
             figure {
 
@@ -303,6 +327,10 @@ header {
                     width: auto;
                     margin: 0 auto;
                     object-fit: cover;
+                    @media screen and (min-width: 1023px) {
+                        width: 100%;
+                        object-fit: fill;
+                    }
                 }
             }
 
@@ -418,7 +446,8 @@ header {
             list-style: none;
 
             @media screen and (min-width: 1023px) {
-                width: calc(28% - 4.5rem);
+                // width: calc(28% - 4.5rem);
+                width: calc(29% - 4.5rem);
                 padding: 5rem 2rem;
                 margin: 0;
                 box-shadow: none;
@@ -493,7 +522,8 @@ header {
             border-bottom-right-radius: 1rem;
            
             @media screen and (min-width: 1023px) {
-                width: calc(22% - 4.9rem);
+                // width: calc(22% - 4.9rem);
+                width: calc(24% - 4.9rem);
                 margin: auto 0;
                 padding: 9rem 2rem;
                 border-left: none;
@@ -556,6 +586,7 @@ footer {
 
             // background-repeat: no-repeat;
             // background-size: cover;
+            margin-top: 6rem;
             background-position-y: -10rem;
         }
     }
@@ -575,11 +606,12 @@ footer {
             flex-direction: row;
             justify-content: space-between;
             padding-bottom: 8.5rem;
+            // padding-top: 3rem;
             padding-top: 3rem;
             // width: 96.8%;
             width: 100%;
-            padding-left: 10rem;
-            padding-right: 10rem;
+            padding-left: 8rem;
+            padding-right: 8rem;
 
         }
 
@@ -589,6 +621,8 @@ footer {
             @media screen and (min-width: 1023px) {
                 width: 30%;
                 padding-top: 1.8rem;
+                // padding-right: 2rem;
+                // margin-right: 2rem;
             }
 
 
